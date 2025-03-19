@@ -2,6 +2,8 @@ import ConsumibleService from "./services/ConsumibleService.js";
 
 const service = new ConsumibleService();
 
+
+// Crear consumibles
 service.agregarConsumible("Servilletas", "Paquete Grande de Servilletas", 50);
 service.agregarConsumible("Platos", "Paquete de Platos", 50);
 service.agregarConsumible("Vasos", "Paquete de Vasos", 50);
@@ -23,5 +25,6 @@ console.log(service.actualizarConsumible(2, "Platos", "Paquete de Platos", 60));
 console.log("CONSUMIBLE ELIMINADO: ");
 console.log(service.eliminarConsumible(3));
 
+// Consumibles restantes
 console.log("ESTOS SON TODOS LOS CONSUMIBLES DEL SISTEMA: ");   
 console.log(service.obtenerConsumibles());
